@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nike Sabrina 2 EP Basketball Shoes</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        /* Navigation Bar */
+        .navbar {
+            background-color: #ffffff;
+            color: rgb(0, 0, 0);
+            padding: 15px;
+            text-align: center;
+            font-size: 18px;
+        }
+
+        .navbar a {
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        .navbar a:hover {
+            text-decoration: underline;
+        }
+
+        /* Container for content */
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 20px auto;
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        /* Product Image Section */
+        .image-section {
+            flex: 1;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .image-section img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* Details Section */
+        .details-section {
+            flex: 1;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .details-section h1 {
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+
+        .price {
+            font-size: 24px;
+            color: #333;
+            margin: 15px 0;
+        }
+
+        .rating {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin: 10px 0;
+        }
+
+        .rating span {
+            font-size: 16px;
+            color: #888;
+        }
+
+        .description {
+            font-size: 16px;
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .size-label, .quantity-label {
+            margin-top: 15px;
+            display: block;
+            font-weight: bold;
+        }
+
+        select, input[type="number"] {
+            padding: 10px;
+            width: 100%;
+            margin-top: 5px;
+            font-size: 16px;
+        }
+
+        /* Add to Cart Button */
+        button {
+            background-color: #000;
+            color: #fff;
+            padding: 15px;
+            border: none;
+            width: 100%;
+            font-size: 18px;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #333;
+        }
+
+        /* Reviews Section */
+        .reviews-section {
+            margin-top: 30px;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .review {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .review img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+        }
+
+        .review-details {
+            flex: 1;
+        }
+
+        .review-details h4 {
+            margin: 0;
+            font-size: 16px;
+            color: #333;
+        }
+
+        .review-details p {
+            margin: 5px 0;
+            font-size: 14px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="navbar">
+            <a href="#" class="logo"><img src="data:image/svg+xml,%3Csvg%20class%3D%22swoosh-svg%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2264%22%20height%3D%2222%22%20viewBox%3D%220%200%2064%2022%22%20fill%3D%22none%22%3E%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M17.7277%2012.1511C15.999%2012.598%2014.4241%2012.8196%2013.0469%2012.8196C11.3396%2012.8196%209.94617%2012.4728%208.97074%2011.7793C4.02962%208.28845%208.54956%200.885548%209.06118%200.0629324C6.88551%202.37923%204.65235%204.80341%202.89851%207.44593C-0.0575023%2011.9597%20-0.812655%2016.2475%200.910825%2018.906C2.23896%2020.9642%204.40042%2022%207.37517%2022C10.0146%2022%2013.2975%2021.1832%2017.1928%2019.5559L64%200.0173385L63.9981%200L17.7277%2012.1511Z%22%20fill%3D%22%23111111%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E" alt=""></a>
+            <nav>
+                <ul>
+                    <li><a href="#">New Releases</a></li>
+                    <li><a href="men.html">Men</a></li>
+                    <li><a href="#">Women</a></li>
+                    <li><a href="#">Kids</a></li>
+                    <li><a href="#">Sale</a></li>
+                </ul>
+            </nav>
+
+            <!-- Search Bar with Icons -->
+            <div class="search-bar">
+                <input type="text" placeholder="Search...">
+                <button>
+                    <!-- <span class="material-symbols-outlined">
+                    search -->
+                    </span></button>
+            </div>
+        </div>
+    </header>
+    <!-- Main Product Page Content -->
+    <div class="container">
+        <!-- Product Image Section -->
+        <div class="image-section">
+            <img src="https://static.nike.com/a/images/t_PDP_936_v1/f_auto,q_auto:eco/21d43744-55d4-42a8-9049-c09221f5d223/SABRINA+2+EP.png" alt="Sabrina 2 EP Basketball Shoes">
+        </div>
+
+        <!-- Product Details Section -->
+        <div class="details-section">
+            <h1>Sabrina 2 EP Basketball Shoes</h1>
+            <div class="price">₹11,995</div>
+            <div class="rating">
+                <span>⭐⭐⭐⭐⭐</span>
+                <span>(67 reviews)</span>
+            </div>
+
+            <p class="description">
+                Step on the court with style and performance. The Sabrina 2 EP brings a sleek, lightweight design paired with advanced cushioning for comfort and speed on the basketball court.
+            </p>
+
+            <label for="size" class="size-label">Select Size</label>
+            <select id="size">
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select>
+
+            <label for="quantity" class="quantity-label">Quantity</label>
+            <input type="number" id="quantity" value="1" min="1">
+
+            <button>Add to Cart</button>
+        </div>
+    </div>
+
+    <!-- Reviews Section -->
+    <div class="container reviews-section">
+        <h2>Customer Reviews</h2>
+
+        <div class="review">
+            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Customer 1">
+            <div class="review-details">
+                <h4>John Doe</h4>
+                <p>⭐⭐⭐⭐⭐</p>
+                <p>Amazing shoes, they fit perfectly and are super comfortable on the court. Highly recommend!</p>
+            </div>
+        </div>
+
+        <div class="review">
+            <img src="https://randomuser.me/api/portraits/women/45.jpg" alt="Customer 2">
+            <div class="review-details">
+                <h4>Jane Smith</h4>
+                <p>⭐⭐⭐⭐</p>
+                <p>Great design, but they run a little small. Suggest ordering a size up.</p>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
