@@ -15,15 +15,15 @@
 
         /* Navigation Bar */
         .navbar {
-            background-color: #ffffff;
-            color: rgb(0, 0, 0);
+            background-color: #f5f5f5;
+            color: white;
             padding: 15px;
             text-align: center;
             font-size: 18px;
         }
 
         .navbar a {
-            color: rgb(0, 0, 0);
+            
             text-decoration: none;
             margin: 0 15px;
             font-weight: bold;
@@ -33,7 +33,7 @@
             text-decoration: underline;
         }
 
-        /* Container for content */
+        /* Main Container */
         .container {
             width: 90%;
             max-width: 1200px;
@@ -57,7 +57,7 @@
             display: block;
         }
 
-        /* Details Section */
+        /* Product Details Section */
         .details-section {
             flex: 1;
             background-color: white;
@@ -159,38 +159,75 @@
             font-size: 14px;
             color: #666;
         }
+
+        /* Media Queries for Responsiveness */
+        @media (max-width: 1024px) {
+            .container {
+                flex-direction: column;
+            }
+
+            .details-section h1 {
+                font-size: 24px;
+            }
+
+            .price {
+                font-size: 22px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .navbar {
+                font-size: 16px;
+            }
+
+            .details-section h1 {
+                font-size: 22px;
+            }
+
+            .price {
+                font-size: 20px;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                flex-direction: column;
+            }
+
+            .navbar {
+                font-size: 14px;
+            }
+
+            .details-section h1 {
+                font-size: 20px;
+            }
+
+            .price {
+                font-size: 18px;
+            }
+
+            button {
+                font-size: 16px;
+            }
+        }
     </style>
 </head>
 <body>
 
-    <header>
-        <div class="navbar">
-            <a href="#" class="logo"><img src="data:image/svg+xml,%3Csvg%20class%3D%22swoosh-svg%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2264%22%20height%3D%2222%22%20viewBox%3D%220%200%2064%2022%22%20fill%3D%22none%22%3E%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M17.7277%2012.1511C15.999%2012.598%2014.4241%2012.8196%2013.0469%2012.8196C11.3396%2012.8196%209.94617%2012.4728%208.97074%2011.7793C4.02962%208.28845%208.54956%200.885548%209.06118%200.0629324C6.88551%202.37923%204.65235%204.80341%202.89851%207.44593C-0.0575023%2011.9597%20-0.812655%2016.2475%200.910825%2018.906C2.23896%2020.9642%204.40042%2022%207.37517%2022C10.0146%2022%2013.2975%2021.1832%2017.1928%2019.5559L64%200.0173385L63.9981%200L17.7277%2012.1511Z%22%20fill%3D%22%23111111%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E" alt=""></a>
-            <nav>
-                <ul>
-                    <li><a href="#">New Releases</a></li>
-                    <li><a href="men.html">Men</a></li>
-                    <li><a href="#">Women</a></li>
-                    <li><a href="#">Kids</a></li>
-                    <li><a href="#">Sale</a></li>
-                </ul>
-            </nav>
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <a href="#">Home</a>
+        <a href="#">Men</a>
+        <a href="#">Women</a>
+        <a href="#">Kids</a>
+        <a href="#">Sale</a>
+    </div>
 
-            <!-- Search Bar with Icons -->
-            <div class="search-bar">
-                <input type="text" placeholder="Search...">
-                <button>
-                    <!-- <span class="material-symbols-outlined">
-                    search -->
-                    </span></button>
-            </div>
-        </div>
-    </header>
     <!-- Main Product Page Content -->
     <div class="container">
         <!-- Product Image Section -->
         <div class="image-section">
-            <img src="https://static.nike.com/a/images/t_PDP_936_v1/f_auto,q_auto:eco/21d43744-55d4-42a8-9049-c09221f5d223/SABRINA+2+EP.png" alt="Sabrina 2 EP Basketball Shoes">
+            <img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/0f2c3ab9-8ed7-47b1-848f-701a50677f60/sabrina-2-ep-basketball-shoes-FZ1517-102.png" alt="Sabrina 2 EP Basketball Shoes">
         </div>
 
         <!-- Product Details Section -->
